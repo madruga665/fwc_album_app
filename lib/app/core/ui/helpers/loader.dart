@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:loading_animation_widget/loading_animation_widget.dart';
 
 mixin Loader<T extends StatefulWidget> on State<T> {
@@ -9,13 +8,14 @@ mixin Loader<T extends StatefulWidget> on State<T> {
     if (!isOpen) {
       isOpen = true;
       showDialog(
-          context: context,
-          builder: (context) {
-            return LoadingAnimationWidget.threeArchedCircle(
-              color: Colors.white,
-              size: 60,
-            );
-          });
+        context: context,
+        builder: (context) {
+          return LoadingAnimationWidget.threeArchedCircle(
+            color: Colors.white,
+            size: 60,
+          );
+        },
+      );
     }
   }
 
