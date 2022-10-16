@@ -1,4 +1,4 @@
-import 'package:flutter/src/widgets/framework.dart';
+import 'package:flutter/material.dart';
 import 'package:flutter_getit/flutter_getit.dart';
 import 'package:fwc_album_app/app/pages/auth/login/login_page.dart';
 import 'package:fwc_album_app/app/pages/auth/login/presenter/login_presenter.dart';
